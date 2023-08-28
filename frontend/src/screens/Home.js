@@ -12,7 +12,7 @@ const Home = () => {
 
   const  fetchFood = async () => {
     await axios
-      .post("http://localhost:3001/api/food")
+      .post("https://happyfood.onrender.com/api/food")
       .then((response) => {
         const ans = response.data;
         // console.log(ans[0],ans[1]);

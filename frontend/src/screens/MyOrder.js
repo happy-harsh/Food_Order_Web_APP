@@ -9,7 +9,7 @@ export default function MyOrder() {
   const fetchMyOrder = async () => {
     const userEmail = localStorage.getItem("userEmail"); // Assuming you store the email in local storage
     await axios
-      .get(`http://localhost:3001/api/user?email=${userEmail}`)
+      .get(`https://happyfood.onrender.com/api/user?email=${userEmail}`)
       .then((response) => {
         const userData = response.data;
         setorderData(userData);

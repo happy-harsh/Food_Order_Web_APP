@@ -21,7 +21,7 @@ const Login = () => {
       password: cred.password,
     };
     await axios
-      .post("http://localhost:3001/api/loginuser", userData)
+      .post("https://happyfood.onrender.com/api/loginuser", userData)
       .then((response) => {
         // console.log(response.status, response.data);
         alert("Login Successful");

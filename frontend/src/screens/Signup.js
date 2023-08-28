@@ -22,7 +22,7 @@ const Signup = () => {
       email:cred.email,
       password:cred.password
     };
-    await axios.post("http://localhost:3001/api/createusers", userData).then((response) => {
+    await axios.post("https://happyfood.onrender.com/api/createusers", userData).then((response) => {
       // console.log(response.status, response.data);
       alert("User Created Successfully");
       navigate("/");

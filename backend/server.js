@@ -61,6 +61,6 @@ mongoose.connect(uri).then(async ()=>{
 // SERVER status
 app.listen(port, () => {
   console.log("------------------------------------");
-  console.log("Server is running perfectfully",port);
+  console.log("Server is running perfectfully");
   console.log("------------------------------------");
 });

@@ -23,7 +23,7 @@ export default function Cart() {
       order_date: new Date().toDateString()
     };
     await axios
-      .post("http://localhost:3001/api/orderData", userData)
+      .post("https://happyfood.onrender.com/api/orderData", userData)
       .then((response)=>{
         // console.log(response.data);
         if (response.status === 200) {
