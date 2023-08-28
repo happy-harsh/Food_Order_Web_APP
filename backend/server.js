@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 require("dotenv").config();
 
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3001;
 const uri = process.env.URI;
 
 app.use(bodyParser.json());
